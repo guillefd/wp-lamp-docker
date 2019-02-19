@@ -1,5 +1,5 @@
-# PROJECT
-> Wordpress Local installation with Docker
+# PROJECT  
+> Wordpress Local installation with Docker  
 > Wordpress version 4.9.9
 
 ## LOCAL STAGE
