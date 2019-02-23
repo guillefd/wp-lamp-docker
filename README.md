@@ -63,7 +63,7 @@ PHP/APACHE Container
 $ `docker exec -it wp-lamp-docker_www_1 bash`
 
 MYSQL Container  
-- get access to MySql on terminal
+- get access to MySql on terminal  
 $ `docker exec -it wp-lamp-docker_db_1 bash`
 
 **Database auto-backup**  
