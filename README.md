@@ -1,6 +1,6 @@
 # PROJECT  
 > Wordpress Local installation with Docker  
-> Wordpress version 4.9.9
+> Wordpress version 4.9.9 (it can be any, just update the files)
 
 ## LOCAL STAGE
 Setup in Docker container
@@ -25,8 +25,6 @@ $ `service apache2 restart`
 if container stops, start it again  
 run $ `docker-compose up -d`  
 
-  
-
 
 ### DAILY USE
 open terminal in project folder, and type:
@@ -38,8 +36,8 @@ $ `docker-compose up -d`
 It´s highly recommended if your shutting down your computer, to stop the "service"  
 $ `docker-compose stop`
 
-**3. View**  
-WEB: open browser and go to http://localhost:8000  
+**3. view on browser**  
+Wordpress: open browser and go to http://localhost:8000  
 PhpMyAdmin: open browser and go to http://localhost:8001 root/root
 
 **4. Work on files**  
@@ -47,7 +45,7 @@ wordpress files are located in the ```/www``` folder.
 every change you make on this files, are replicated "instantly" on the server. (still you'll need to refresh the page each time to see them).   
 database dump is located in ```/dump``` folder.
 
-> Let´s Get The Shit Done
+> Enjoy
 
 ## DEV SPECS
 
@@ -59,14 +57,16 @@ mail: me@mail.com
 **Shell**  
 get shell access to container  
 
-PHP/APACHE Container    
+PHP/APACHE Container  
+- get access to Linux on terminal
 "Debian GNU/Linux 8 (jessie)"  
 $ `docker exec -it wp-lamp-docker_www_1 bash`
 
 MYSQL Container  
+- get access to MySql on terminal
 $ `docker exec -it wp-lamp-docker_db_1 bash`
 
-**Database Backup**  
+**Database auto-backup**  
 trigger mysqldump and save file to `/backupdb` folder.  
 filename references datetime:  `mm-dd_hh-mm__`    
 
